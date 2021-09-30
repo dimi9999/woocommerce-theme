@@ -1,0 +1,71 @@
+
+
+// POSITIONS
+.relative {position:relative;}
+.static   {position:static;}
+.fixed 	  {position:fixed;}
+.absolute {position:absolute;}
+
+/*
+---------------
+floats & blocks
+---------------
+*/
+
+.float-left {
+	float:left;
+}
+.float-right {
+	float:right;
+}
+.inline {
+	display:inline;
+}
+.inline-block {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:100%;
+	*display:inline;
+}
+.block {
+	display:block;
+}
+/*
+----------------------
+alignments and flexbox
+----------------------
+*/
+ .align-left {
+     text-align: left;
+}
+ .align-right {
+     text-align: right;
+}
+ .align-center {
+     text-align: center;
+}
+ .marginauto {
+     margin: 0 auto!important;
+}
+ .valign-top {
+     vertical-align: top!important;
+}
+ .valign-middle, .valign-middle-children > * {
+     vertical-align: middle!important;
+}
+ .valign-bottom {
+     vertical-align: bottom!important;
+}
+ .fullwidth {
+     width: 100%;
+}
+ .fullheight {
+     height: 100%;
+}
+
+  
+/* Row with equal height columns -------------------------------------------------- */
+
+ 
+
+

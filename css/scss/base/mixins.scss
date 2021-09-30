@@ -1,0 +1,126 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+ 
+
+@mixin transform ($value) {
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -webkit-transform: $value;
+  transform: $value;
+}
+
+@mixin transition ($value) {
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+  &.placeholder {
+    @content
+  }
+}
+
+@mixin respond-min-width($width) {
+    @if $old-ie {@content;}
+    @else {@media screen and (min-width: $width) {@content;}}
+}
+
+@mixin respond-min-height($height) {
+    @if $old-ie {@content;}
+    @else {@media screen and (min-height: $height) {@content;}}
+}
+
+@mixin old-ie {
+    @if $old-ie {@content;}
+}
+
+  
+@mixin inline-block($valign:top,$important:false) {
+	vertical-align:$valign;
+}
+
+// flexbox 
+@mixin flexbox {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-direction:row;
+}
+@mixin appearance($value) { 
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
+ 
+// border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+          -o-border-radius:$radius;
+}
+// box sizing
+@mixin boxsizing {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+// box shadow
+@mixin box-shadow($top, $left, $bottom, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $bottom $blur $color;
+    -moz-box-shadow:inset $top $left $bottom $blur $color;
+    box-shadow:inset $top $left $bottom $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+@mixin no-shadow {
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+ 
+ 
+
+ 

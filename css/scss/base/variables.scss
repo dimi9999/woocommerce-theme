@@ -1,0 +1,30 @@
+// colors
+$black: #333;
+$white: #fff;
+$primary-color: #000;
+$link-color: blue;
+
+// font family
+$primary-font: 'Arial', sans-serif;
+
+// body
+$default-text-color: $black;
+$default-background-color: $white;
+$default-font-size: 20px;
+$default-line-height: 1.7;
+$default-font-family: $primary-font;
+$default-min-width: 320px;
+
+// link
+$default-link-color: $link-color;
+
+// headers
+$h1-font-size: 50px;
+$h2-font-size: 24px;
+$h3-font-size: 22px;
+$h4-font-size: 18px;
+$h5-font-size: 17px;
+$h6-font-size: 15px;
+
+$headings-font-family: $primary-font;
+$headings-color: $black;

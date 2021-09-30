@@ -1,0 +1,16 @@
+1) On your host (either local or live) create a SQL database named as clothesdb.sql add a username and password  like
+	userdb, passdb123
+
+2) Right-click the dp.sql file open it and copy and paste all the contents into your new sql database or import it
+
+3) Download wordpress change the wp-config.php settings to point to the correct host , database, user and password
+
+4) Install wordpress and woocommerce (or add it to your ftp straight away). Copy the database and refrssh your site
+
+5) On your wordpress Dashboard go to > appearance > themes and select dicielo theme - Activate
+
+6) Remember! On the .sql file change https://www.dimpa.eu to your site url. 
+
+7) Create a subfolder in your ftp called shop. Drop wordpress and the site theme in wp-content/themes there
+
+8) Your new store is ready . Enjoy :)

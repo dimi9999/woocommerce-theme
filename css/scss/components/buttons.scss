@@ -1,0 +1,128 @@
+/*
+-------------------
+Woocommerce buttons
+-------------------
+*/
+
+.woocommerce {
+	#respond {
+		input#submit.alt {
+			font-family: 'Poppins', cursive,sans-serif;
+			text-transform: lowercase;
+			font-weight: normal;
+		}
+		input#submit {
+			font-family: 'Poppins', cursive,sans-serif;
+			text-transform: lowercase;
+			font-weight: normal;
+			vertical-align: middle;
+			float: left;
+			display: inline-block;
+			background: #ff0099;
+			color: #fff;
+			padding: 8px 30px;
+			border-radius: 30px;
+			line-height: 1.4em;
+			font-size: 16px;
+			min-height: 40px;
+		}
+	}
+	a.button.alt {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+	}
+	button.button.alt {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+	}
+	input.button.alt {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+	}
+	a.button {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+		vertical-align: middle;
+		float: left;
+		display: inline-block;
+		background: #ff0099;
+		color: #fff;
+		padding: 8px 30px;
+		border-radius: 30px;
+		line-height: 1.4em;
+		font-size: 16px;
+		min-height: 40px;
+	}
+	button.button {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+		vertical-align: middle;
+		float: left;
+		display: inline-block;
+		background: #ff0099;
+		color: #fff;
+		padding: 8px 30px;
+		border-radius: 30px;
+		line-height: 1.4em;
+		font-size: 16px;
+		min-height: 40px;
+	}
+	input.button {
+		font-family: 'Poppins', cursive,sans-serif;
+		text-transform: lowercase;
+		font-weight: normal;
+		vertical-align: middle;
+		float: left;
+		display: inline-block;
+		background: #ff0099;
+		color: #fff;
+		padding: 8px 30px;
+		border-radius: 30px;
+		line-height: 1.4em;
+		font-size: 16px;
+		min-height: 40px;
+	}
+	span.onsale {
+		width: 3.236em;
+		height: 3.236em;
+		padding: .202em;
+		font-size: 1em;
+		font-weight: 700;
+		position: absolute;
+		background-color: #ff0099;
+		color: #fff;
+		font-size: .857em;
+		z-index: 9;
+	}
+	div.product {
+		p.price {
+			color: #333;
+			font-weight: 800;
+			font-family: 'Poppins', sans-serif;
+		}
+		span.price {
+			color: #333;
+			font-weight: 800;
+			font-family: 'Poppins', sans-serif;
+		}
+		form.cart {
+			.button {
+				vertical-align: middle;
+				float: left;
+				display: inline-block;
+				background: #ff0099;
+				color: #fff;
+				padding: 8px 30px;
+				margin: 0 10px;
+				border-radius: 30px;
+				font-size: 16px;
+				min-height: 40px;
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+ 
+ 
+
+@import '../base/mixins';
+
+/* Header */
+
+#googleHeader {
+	@include flexbox;
+	justify-content: space-between;
+	padding: 15px 20px;
+	& a {
+		font-size: 13px;
+		color: #666;
+		margin: 0 7px;
+    }
+	& i, & span {
+		margin: 0 7px;
+	}
+	& .avatar {
+		background: orange;
+		color: #fff;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		@include border-radius(50px);
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+#googleHeader i {
+	font-size: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ 
+
+
+/* main */
+
+#googleContent {
+	@include flexbox;
+	padding: 20px;
+}
+
+.formContainer {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	max-width: 600px;
+	margin-top: 130px;
+	margin-bottom: 30px;
+	padding: 0 20px;
+	& .row {
+		margin: 0 0 35px 0;
+	}
+}
+
+/* searchbox */
+
+.GoogleSearchContainer {
+	width: 100%;
+	padding: 6px 30px;
+	border: 1px solid #ccc;
+	position: relative;
+	@include border-radius(50px);
+	&:hover,
+	&:focus,
+	&:active {
+		@include box-shadow(0, 2px, 14px, 14px, #ccc); 
+	}
+	& i,img {
+		position: absolute;
+		top: 7px;
+		left: 16px;
+	}
+}
+
+.GoogleSearchContainer i {
+	font-size: 16px;
+	color: #999;
+	transform: rotateX(0deg);
+	font-weight: bold;
+}
+
+.GoogleSearchContainer img {
+	right: 15px!important;
+	left: auto;
+	top: 10px;
+}
+
+.GoogleSearchContainer input[type="text"] {
+	width: 100%;
+	height: 30px;
+	padding: 0 20px;
+	@include boxsizing;
+	border: 0;
+	font-size: 16px;
+	color: #999;
+	overflow: hidden;
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+.formContainer input[type="Submit"] {
+	font-size: 14px;
+	padding: 10px; 
+	color: #333;  
+	border: 1px solid transparent;
+	background:transparent;
+}
+
+.formContainer input[type="Submit"]:hover {
+	@include box-shadow(0, 2px, 14px, 14px, #ccc); 
+	border: 1px solid #ccc; 
+}
+
+
+/* Copyright */
+
+#googleCopyright {
+	@include flexbox;
+	justify-content: space-between;
+	padding: 10px 25px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+
+/* Footer */
+#googleFooter {
+	@include flexbox;
+	justify-content: space-between;
+	padding: 10px 20px;
+	& a {
+		margin: 0 7px;
+		color: #666;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	& img {
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+#googleBottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+@media only screen and (max-width:767px) {
+	.formContainer img {
+		max-width:150px;
+	}
+	#googleFooter {
+		display:none;
+	}
+}
