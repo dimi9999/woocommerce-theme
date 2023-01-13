@@ -1,0 +1,163 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: $headings-color;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+@media only screen and (max-width:767px) {
+	h1 {
+	  font-size: $h1-font-size;
+	}
+
+	h2 {
+	  font-size: $h2-font-size;
+	}
+
+	h3 {
+	  font-size: $h3-font-size;
+	}
+
+	h4 {
+	  font-size: $h4-font-size;
+	}
+
+	h5 {
+	  font-size: $h5-font-size;
+	}
+
+	h6 {
+	  font-size: $h6-font-size;
+	}
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+a {
+  color: $default-link-color;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: darken($default-link-color, 15%);
+  }
+}
+/* lists */
+ul, ol {
+	margin:20px 0;
+}
+
+ol  {
+	list-style: lower-greek;
+}
+
+ul  {
+	list-style:disc;
+}
+
+ul, li, ol {
+	line-height:1.8em;
+	padding-left:40px;
+    &.unstyled {
+        list-style-type:none;
+    }
+}
+
+ul li,
+ol li {
+	margin: 0 0 20px;
+	font-size:16px;
+	line-height:20px;
+}
+
+/* definition lists */
+
+dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+dt {
+	float: left;
+	clear: left;
+	width: 100px;
+	text-align: right;
+	font-weight: bold;
+	color: red;
+}
+dt::after {
+	content: ":";
+}
+dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+}
+
+/* tables */
+table,tr,td,tdoby,th {
+	border-collapse:collapse;
+}
+/* inputs */
+input,select,button,textarea {
+	outline:none;
+}
+/*
+----------------
+responsive video
+----------------
+*/
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,
+.Flexible-container video, /* for html5 video embeds */
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ 
+
+ 
+ 
+ 
